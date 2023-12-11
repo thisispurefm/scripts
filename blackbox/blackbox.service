@@ -1,0 +1,13 @@
+[Unit]
+Description=Black box recording script
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=sh /home/puretech/blackbox.sh
+Restart=always
+User=puretech
+Group=puretech
+
+[Install]
+WantedBy=multi-user.target
